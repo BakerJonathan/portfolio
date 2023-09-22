@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jonathan Website</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- For now with two items, I don't especially need the dropdown functionality -->
+
+<nav class="navbar navbar-expand bg-dark navbar-dark py-1 fixed-top">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">Jonathan Baker</a>
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hobbies.html" class="nav-link">Hobbies</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hobbies pt-5">
+    <h1 class="text-center px-5 py-3">As I mentioned on the homepage, I have a number of nerdy hobbies. Nothing too crazy, but may as well mention them.</h1>
+
+    
+    <div class="bg-dark">
+            <div class="d-md-flex align-items-center justify-content-between">
+                
+                <div class="col-lg-5 col-md-6 px-lg-5 px-md-2 col-sm-12 py-1 "> 
+                    <h1 class="text-light">I've watched anime since I was a kid. These days I'll often turn on a dubbed anime while multitasking, if the other task doesn't require too much focus.
+                    </h1>
+                    <!-- Extra details -->
+                    <!-- Largely traditional shounen. One piece, Hajime No Ippo, Full Metal Alchemist Brotherhood to name a few. -->
+                    <!-- Some find Anime to be ridiculous or childish, I enjoy an extent of that for my fiction though.-->
+                </div>
+                <img src="static/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg" alt="Dude with camera in forest" class="img-fluid col-lg-7 col-md-6 col-sm-12 ">
+            </div>
+    </div>
+
+        <div class="d-md-flex align-items-center justify-content-between">
+            <img src="static/miika-laaksonen-nUL9aPgGvgM-unsplash.jpg" alt="Dude with camera in forest" class="img-fluid col-lg-7 col-md-6 col-sm-12 ">
+            <div class="col-lg-5 col-md-6 px-lg-5 px-md-2 col-sm-12 py-1 "> 
+                <h1>An extension of watching anime, was reading manga and light novels. Once I catch up to an anime, if I wanted to keep going on the story, the next step would be to read the previous source.
+                </h1>
+                    <!-- Extra details -->
+                    <!-- Eventually this led to it's korean counterpart, manhwa. Manga - Japanese Comices, Manhwa - Korean Comics, Manhua-Chinese Comics -->
+                    <!-- Probably easier just to call it all as 'comics' or 'Korean(countries') comics' though. -->
+                    <!-- I generally wouldn't consider myself a huge reader, but I have binged 100's of chapters of light novels over the course of a few nights, so I suppose I could become one. -->
+            </div>
+            
+        </div>
+
+    <div class="bg-dark">
+            <div class="d-md-flex align-items-center justify-content-between">
+                
+                <div class="col-lg-5 col-md-6 px-lg-5 px-md-2 col-sm-12 py-1 "> 
+                    <h1 class="text-light">
+                        Another one of my nerdy hobbies is board games. My car trunk is filled to the brim with board games, some casual, some more intensive, always with me if I find a context to pull em' out.
+                    </h1>
+                    <!-- Extra details -->
+                    <!-- I'll lend them out too, if people ask. Only been asked of me a handful of times (4 or 5 maybe?) -->
+                    <!-- Got introduced to it all through my brother. Comically me buying him a board game as a gift was what inspired me eventually building my own collection. -->
+                </div>
+                <img src="static/aksel-fristrup-w7eaCH6ShR4-unsplash.jpg" alt="Catan with modded pieces" class="img-fluid col-lg-7 col-md-6 col-sm-12">
+            </div>
+    </div>
+
+        <div class="d-md-flex align-items-center justify-content-between">
+            <img src="static/sigmund-By-tZImt0Ms-unsplash.jpg" alt="Dude with camera in forest" class="img-fluid col-lg-7 col-md-6 col-sm-12">
+            <div class="col-lg-5 col-md-6 px-lg-5 px-md-2 col-sm-12 py-1 "> 
+                <h1>Lastly, video games. In recent years I've humoured climbing ranks, and self imposed challenges, helps keep things fresh. Often this is done with friends or watching videos (including anime).
+                </h1>
+                <!-- Extra details -->
+                <!-- Got the equivalent of 'top 5 or 10%' in a few games, though I've not pushed too much past that  -->
+                <!-- 60/40 split between pc and nintendo -->
+                <!-- Largely strategy, rpgs, and action games. Minimal shooters (nothing against em', just realize it's what people may think of with gaming). -->
+            </div>
+            
+        </div>
+
+
+        <!-- Using the h4 as a div, that's probably mildly bad convention, but it keeps all the 'children text' in h4 without having to declare -->
+        <h4 class="m-lg-5 m-md-3 m-sm-1 m-1 p-2 border">
+            Which of these hobbies do you have? (Not actually connected to anything, backend or poll)
+            <form class="d-flex">
+                <div class="col-6">
+                <input type="checkbox" value="Anime">
+                <!-- Lacks id and name, these might be more pressing if it was actually functional, but it's a ghost container. Easy enough to add later too. -->
+                <label for="hobby1"> Anime</label><br>
+                <input type="checkbox"  value="Manga">
+                <label for="hobby2"> Asian comics (manga, manhwa,etc) and light novels</label><br>
+                <input type="checkbox"  value="Books">
+                <label for="hobby3"> Other books</label><br>
+                <input type="checkbox"  value="Shows">
+                <label for="hobby4"> Other shows</label><br>
+                <input type="checkbox"  value="Cards">
+                <label for="hobby5"> Cards (trading or games)</label><br>
+                <input type="checkbox"  value="Creative">
+                <label for="hobby6"> Creative (art, cooking, etc.)</label><br>
+                <br>
+                <input type="submit" value="Submit">
+
+                </div>
+                <div class="col-6">
+                <input type="checkbox" value="Board games">
+                <label for="hobby7"> Board games</label><br>
+                <input type="checkbox" value="Gaming">
+                <label for="hobby8"> Gaming</label> <br>
+                <input type="checkbox" value="Fitness">
+                <label for="hobby9"> Fitness</label><br>
+                <input type="checkbox" value="Sports">
+                <label for="hobby10"> Sports</label><br>
+                <input type="checkbox"  value="Arcade">
+                <label for="hobby11"> Things in a non-electronic arcade (ie billiard, darts)</label><br>
+                <input type="checkbox"  value="Other">
+                <label for="hobby12"> Other</label><br>
+                 </div>
+                 <br>
+
+
+            </form>
+        </h1>
+
+</section>
+
+<footer>        
+    <div class="bg-dark text-light text-center p-2"> © Jonathan Baker 2023, but not actually, I didn't  actually pay the copyright people, however that works. </div>
+</footer>
+    
+</body>
+</html>
